@@ -54,20 +54,17 @@
 /**********SPI**********/
 /* SPI0_M0 */
 &spi0 {
-	status = "disabled";
+	status = "okay";
 	spidev@0 {
 		spi-max-frequency = <50000000>;
 	};
-  fbtft@0 {
-    spi-max-frequency = <50000000>;
-  };
 };
 
 /**********I2C**********/
 /* I2C3_M1 */
 &i2c3 {
-	status = "disabled";
-	clock-frequency = <100000>;
+	status = "okay";
+	clock-frequency = <400000>;
 };
 
 /* I2C0_M2 */
@@ -79,12 +76,12 @@
 /**********UART**********/
 /* UART3_M1 */
 &uart3 {
-	status = "disabled";
+	status = "okay";
 };
 
 /* UART4_M1 */
 &uart4 {
-	status = "disabled";
+	status = "okay";
 };
 
 /**********PWM**********/
